@@ -1,0 +1,23 @@
+{
+  "name": "Diplomas",
+  "version": "0.0.1",
+  "homepage": "https://github.com/extensionTec/diplomas",
+  "authors": [
+    "Octavio Martinez <octavio.martinez@itesm.mx>"
+  ],
+  "dependencies" : {
+      "jquery": "latest",
+      "underscore": "latest"
+  },
+  "description": "Para llevar control de los documentos que se entregan por programa",
+  "main": "app.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "specs"
+  ]
+}

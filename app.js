@@ -5,9 +5,15 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+// ROUTES ---------------------------
 var routes = require('./routes/index');
+var query = require('./routes/query');
+var persona = require('./routes/persona');
+var programa = require('./routes/programa');
+var data = require('./routes/data');
+var download = require('./routes/download');
 var users = require('./routes/users');
-
+// ----------------------------------
 var app = express();
 
 // view engine setup
@@ -22,8 +28,16 @@ app.use(cookieParser());
 app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
+// ROUTES -------------------------
 app.use('/', routes);
+app.use('/query', query);
+app.use('/persona', persona);
+app.use('/programa', programa);
+app.use('/data', data);
+app.use('/download', download);
 app.use('/users', users);
+// ---------------------------------
+
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
