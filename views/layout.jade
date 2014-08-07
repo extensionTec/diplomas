@@ -2,6 +2,15 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    link(rel='stylesheet', href='/components/bootstrap/dist/css/bootstrap.min.css')
   body
-    block content
+    block title
+      .row
+        .col-lg-8.col-lg-offset-2
+          h1.index-title= title
+        include blocks/index-buttons
+    block body
+
+  script(src='/components/jquery/dist/jquery.min.js')
+  script(src='/components/bootstrap/dist/js/bootstrap.min.js')

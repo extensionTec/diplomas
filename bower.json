@@ -6,8 +6,9 @@
     "Octavio Martinez <octavio.martinez@itesm.mx>"
   ],
   "dependencies" : {
-      "jquery": "latest",
-      "underscore": "latest"
+      "jquery" : "~2.1.1",
+      "underscore" : "~1.6.0",
+      "bootstrap" : "~3.2.0"
   },
   "description": "Para llevar control de los documentos que se entregan por programa",
   "main": "app.js",
